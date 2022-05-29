@@ -41,7 +41,7 @@ RUN set -ex ; \
   cd /opt/hexlite ; \
   python3 setup.py install --prefix=/opt
 
-FROM debian:buster-slim
+FROM debian:10.12-slim
 
 ENV PATH /opt/bin:$PATH
 ENV PYTHONPATH /opt/lib/python3.7/site-packages/:$PYTHONPATH
